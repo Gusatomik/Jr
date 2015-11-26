@@ -1,0 +1,19 @@
+# Jr. un générateur de blogs statiques
+
+### January 3rd, 2015
+
+Pour le premier article de ce blog, je souhaite vous parler de [`Jr.`](http://xeoncross.github.io/jr) un générateur de blog statique que j'ai découvert sur [korben.info](http://korben.info/moteur-de-rendu-site-statique.html), grâce auquel je publie le présent blog.
+
+L'idée développée par le concepteur de `Jr.` est d'utiliser le script [`showdown.js`](https://github.com/showdownjs/showdown) (Javascript) pour générer le rendu HTML à partir d'un texte formaté en [`Markdown`](http://daringfireball.net/projects/markdown/).
+
+Cela présente l'avantage d'avoir un blog léger côté serveur (puisque le rendu est construit par le moteur javascript du navigateur du client/visiteur) et un formattage des articles simplifié (grâce à la syntax Markdown), ce qui m'a semblé approprié pour héberger mon blog sur ma carte [Raspberry Pi](http://raspberrypi.org) dont les ressources sont assez limitées. 
+
+J'en ai profité pour me créer mon premier dépôt [Bitbucket](https://bitbucket.org) qui contient tous les fichiers de ce blog, me permettant de l'éditer d'à peu près n'importe où et n'importe quand, tout en me garantissant un backup en cas de pépin (un petit coup de `git clone` pour tout récupérer et voila!).
+
+Pour le bien de la science, je ne peux pas exclure de la présentation les quelques défauts que je lui repproche :
+
+- le script `showdown.js` est une implémentation du script perl `markdown.pl`. Le projet a souffert d'un manque d'activité et toutes les fonctionnalités n'ont pas encore été implémentées. L'auteur a récemment lancé un appel à contributeurs, reste à voir ce que cela va donner.
+
+Quoiqu'il en soit, si vous lisez cet article c'est que, dans l'ensemble, ça fonctionne relativement bien ;-)
+
+<script src="js/jr.js"></script>
