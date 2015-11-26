@@ -1,0 +1,14 @@
+{
+  "name": "jr",
+  "type": "static",
+  "displayName": "Jr",
+  "version": "1.0.0",
+  "description": "Jr static blog generator for Cozy Light",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gusatomik/Jr.git"
+  },
+  "main": "index.html",
+  "cozy-displayName": "Jr"
+}
