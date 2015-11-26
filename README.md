@@ -1,1 +1,3 @@
-# Jr
+# Bienvenue sur le RPI Libre !
+
+Je ne sais pas encore quoi raconter ici ...

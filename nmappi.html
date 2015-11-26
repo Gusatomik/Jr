@@ -1,0 +1,15 @@
+# Trouver un Raspberry Pi sur le réseau avec nmap
+
+### August 7th, 2015
+
+D'après [cet échange](https://raspberrypi.stackexchange.com/questions/13936/find-raspberry-pi-address-on-local-network) sur le forum stackexchange.com, il est dit que les Raspberry Pi (au moins les modèles B) ont tous une adresse MAC qui commence par : 
+
+	B8:27:EB
+
+Cette information peut s'avérer utile dans le cas où vous savez qu'une carte Raspberry Pi se trouve sur votre réseau local mais que vous ne connaissez pas l'adresse IP qui lui a été attribué. Combinée au petit utilitaire réseau `nmap`, vous aurez la possibilité de retrouver l'adresse IP locale d'une carte Raspberry Pi sur votre réseau, en recherchant les périphériques dont l'adresse MAC débute comme énoncé prédemment.
+
+La commande à entrer dans un terminal en tant que super-utilisateur est la suivante :
+
+	nmap -sP 192.168.1.0/24 | awk '/^Nmap/{ip=$NF}/B8:27:EB/{print ip}'
+
+<script src="js/jr.js"></script>
